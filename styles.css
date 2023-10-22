@@ -1,0 +1,122 @@
+/* Body */
+body {
+    margin: 0px;
+    padding-left: 0px;
+    padding-right: 0px;
+}
+
+/* Carousel */
+.carousel-inner {
+    max-height: 800px;
+}
+
+/* Form */
+form {
+   
+    margin: 20px;
+    padding: 20px;
+    background-color: #fff;
+}
+
+label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: bold;
+}
+
+
+
+button {
+    background-color: #007bff;
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 4px;
+}
+
+.formulario {
+    display: flex;
+   justify-content: center;
+    align-items: center;
+}
+
+/* footer */
+footer {
+    display: flex;
+    justify-content:space-around;
+    text-align: center;
+    padding: 10px;
+}
+
+.linkFoot {
+    font-size: large;
+    color: blue;
+    text-decoration: none;
+}
+
+
+
+
+
+/* Animacion del h1 */
+.titulo {
+    min-height: 50px;
+    margin-top: 15px;
+    color: #333;
+    font-family: 'Courier New', Courier, monospace;
+    text-align: center;
+    font-size: 2.5em;
+    animation: cambiaColor 2s linear infinite; /* Aplicar animación */
+    }
+    
+    @keyframes cambiaColor {
+        0% {
+            color: #333; /* Color inicial */
+        }
+        50% {
+            color: #ff6600; /* Color a la mitad de la animación */
+        }
+        100% {
+            color: #333; /* Color final (vuelve al color inicial) */
+        }
+    }
+    
+
+
+
+/* Animacion a*/
+a:hover {
+background-color: goldenrod;
+
+}
+
+
+/* Media query para pantallas pequeñas (smartphones) */
+@media (max-width: 988px) {
+    
+  
+    .logo {
+        width: 40px; 
+    }
+    
+    .navbar-collapse {
+        background-color: rgb(78, 78, 76); 
+    }
+    
+    body {
+        background-color: rgb(153, 152, 152);
+        font-size: small;
+    }
+
+}
+
+  /* Media query para pantallas grandes */
+  @media (min-width: 1200px) {
+    body {
+        background-color: white;
+        font-size: medium;
+    }
+    .navbar-collapse {
+      background-color: transparent; 
+    }
+    
+}
