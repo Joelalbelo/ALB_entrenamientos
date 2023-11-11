@@ -11,7 +11,10 @@ body {
 }
 
 /* Form */
-
+#container_1 img {
+    max-width: 100%;
+    
+}
 
 /* footer */
 footer {
