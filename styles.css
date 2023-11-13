@@ -16,6 +16,18 @@ body {
     
 }
 
+/* Iframe */
+#mitad_iframe {
+    max-width: 100%;    
+    display: flex;
+    text-align: center;    
+}
+
+#mitad_iframe div {
+    max-width: 50%;
+    display: flex;   
+}
+
 /* footer */
 footer {
     background-color: #f8f9fa;
@@ -46,7 +58,7 @@ footer {
             color: #333; /* Color inicial */
         }
         50% {
-            color: #ff6600; /* Color a la mitad de la animación */
+            color: rgb(0, 0, 255); /* Color a la mitad de la animación */
         }
         100% {
             color: #333; /* Color final (vuelve al color inicial) */
