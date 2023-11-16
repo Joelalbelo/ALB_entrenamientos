@@ -11,7 +11,7 @@ body {
 }
 
 #proteinas, #creatina, #planes {
-    box-shadow: 0 4px 8px rgba(1, 1, 1, 1);
+    box-shadow: 0 4px 8px rgba(1, 1, 1, 1); /* sombras de las "tarjetas"*/
     border-radius: 8px;
     margin: 20px auto;
 }
@@ -37,19 +37,29 @@ body {
     border: 0;
   }
 
-  /*Fomr compras*/
-  #titulo_form {
-      padding-top: 15px;
-      text-align: center;
+/*Fomr compras*/
+#titulo_form {
+color: tomato;
+text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+animation: subeBaja 2s infinite;
+padding-top: 15px;
+text-align: center;
+}
+@keyframes subeBaja {
+    0%, 100% {
+      transform: translateY(0);
     }
-    
-    /* Form entrenar */
-    #container_1 img {
-        max-width: 100%;
-        
+    50% {
+      transform: translateY(-20px);
     }
+}
     
-    /* footer */
+/* Form entrenar */
+#container_1 img {
+      max-width: 100%;
+}
+    
+/* footer */
 footer {
     background-color: #f8f9fa;
     padding: 20px;
@@ -77,12 +87,15 @@ footer {
     @keyframes cambiaColor {
         0% {
             color: #333; /* Color inicial */
+            transform: translateY(0);  /*posicion inicial */
         }
         50% {
             color: rgb(0, 0, 255); /* Color a la mitad de la animación */
+            transform: translateY(-20px);/*sube*/
         }
         100% {
             color: #333; /* Color final (vuelve al color inicial) */
+            transform: translateY(0);/*vuelve a la posicion inicial*/
         }
     }
     
