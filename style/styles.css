@@ -10,12 +10,6 @@ body {
     max-height: 800px;
 }
 
-/* Form */
-#container_1 img {
-    max-width: 100%;
-    
-}
-
 #proteinas, #creatina, #planes {
     box-shadow: 0 4px 8px rgba(1, 1, 1, 1);
     border-radius: 8px;
@@ -43,7 +37,19 @@ body {
     border: 0;
   }
 
-/* footer */
+  /*Fomr compras*/
+  #titulo_form {
+      padding-top: 15px;
+      text-align: center;
+    }
+    
+    /* Form entrenar */
+    #container_1 img {
+        max-width: 100%;
+        
+    }
+    
+    /* footer */
 footer {
     background-color: #f8f9fa;
     padding: 20px;

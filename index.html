@@ -28,17 +28,8 @@
               <li class="nav-item">
                 <a class="nav-link active" aria-current="page" href="https://joelalbelo.github.io/ALB_entrenamientos/">Inicio</a>
               </li>
-              <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                  Suplementos
-                </a>
-
-                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                  <li><a class="dropdown-item" href="#proteinas">Proteinas</a></li>
-                  <li><a class="dropdown-item" href="#creatina">Creatina</a></li>
-                  <li><hr class="dropdown-divider"></li>
-                  <li><a class="dropdown-item" href="#planes">Planes nutricionales</a></li>
-                </ul>
+              <li class="nav-item">
+                <a class="nav-link" href="#proteinas">Suplementos</a>
               </li>
               <li class="nav-item">
                 <a class="nav-link" href="./pages/entrenadores.html">Entrenadores</a>
@@ -104,6 +95,8 @@
               </p>
           </div>
       </div>
+
+      <!--Compras-->
       <div class="row align-items-center py-2" id="planes">
         <div class="col-md-6 p-0 m-0">
           <img src="https://images.unsplash.com/photo-1693996046147-df51fcf78ebc?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="">
@@ -118,6 +111,102 @@
         </div>
     </div>
       </div>
+<div class="container-fluid" id="titulo_form">
+    <h2>Compra de Suplementos</h2>
+    <h6>*precio por unidad $1000</h6>
+</div>
+
+<div class="container">
+        <div class="row mt-3 mb-3 p-3">
+            <!-- Tarjeta 1 - Borde Azul -->
+            <div class="col-md-4">
+                <div class="card border-primary mb-3" style="border-width: 4px;">
+                    <div class="card-header text-center">contado</div>
+                    <div class="card-body">
+                        <p class="card-text text-center">Tienen un descuento</p>
+                        <h5 class="card-title text-center">10% </h5>
+                    </div>
+                </div>
+            </div>
+    
+            <!-- Tarjeta 2 - Borde Verde -->
+            <div class="col-md-4">
+                <div class="card border-success mb-3" style="border-width: 4px;">
+                    <div class="card-header text-center">6 Cuotas</div>
+                    <div class="card-body">
+                        <p class="card-text text-center">Tienen un recargo</p>
+                        <h5 class="card-title text-center">20%</h5>
+                    </div>
+                </div>
+            </div>
+    
+            <!-- Tarjeta 3 - Borde Rojo -->
+            <div class="col-md-4">
+                <div class="card border-danger mb-3" style="border-width: 4px;">
+                    <div class="card-header text-center">12 Cuotas</div>
+                    <div class="card-body">
+                        <p class="card-text text-center">Tienen un recargo </p>
+                        <h5 class="card-title text-center">30%</h5>
+                    </div>
+                </div>
+            </div>
+        </div>
+</div>
+
+<div class="container-fluid d-flex justify-content-center">
+    <form id="formulario-compra" class="row mt-3 mb-3 p-3" action="">
+        <div class="col-md-6">
+            <label for="name" class="form-label">Nombre:</label>
+            <input type="text" class="form-control" id="name" placeholder="Escribe tu nombre">
+        </div>
+        <div class="col-md-6">
+            <label for="apellido" class="form-label">Apellido:</label>
+            <input type="text" class="form-control" id="apellido" placeholder="Escribe tu apellido">
+        </div>
+        <div class="col-12">
+            <label for="email" class="form-label">Email</label>
+            <input type="email" class="form-control" id="email" placeholder="Escribe tu email">
+        </div>
+        <div class="container">
+            <div class="row">
+              <div class="col-md-6">
+                <form id="miFormulario" class="p-3">
+                  <div class="row">
+                    <div class="col-md-6">
+                      <label for="cantidadSuplementos" class="form-label">cantidad:</label>
+                      <input type="number" class="form-control" id="cantidadSuplementos" min="1" required>
+                    </div>
+          
+                    <div class="col-md-6">
+                      <label for="opcionSeleccionada" class="form-label">Opción:</label>
+                      <select class="form-select" id="opcionSeleccionada">
+                        <option value="opcion1">Contado</option>
+                        <option value="opcion2">6 Cuotas</option>
+                        <option value="opcion3">12 Cuotas</option>
+                      </select>
+                    </div>
+                  </div>
+          
+                  <button type="button" class="btn btn-primary" onclick="calcularPrecio()">Calcular Precio</button>
+                </form>
+              </div>
+            </div>
+          
+            <div class="row mt-3">
+              <div class="col-md-6">
+                <p>TOTAL A PAGAR :$ <span id="resultado"></span></p>
+              </div>
+              <div>
+                <button type="submit" class="btn btn-success btn-lg"onclick="cartelCompra()">COMPRAR</button>
+              </div>
+            </div>
+          </div>      
+        </form>
+      </div>
+      
+
+
+
 
      <!--Iframe -->
     <div class="card">
