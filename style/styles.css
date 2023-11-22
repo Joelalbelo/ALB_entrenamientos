@@ -124,11 +124,11 @@ background-color: goldenrod;
     }
     
     .navbar-collapse {
-        background-color: rgb(160, 247, 247); 
+        background-image: url(https://img.freepik.com/premium-photo/gradient-purple-blue-color-abstract-background_27109-275.jpg);
     }
     
     body {
-        background-color: rgb(209, 206, 206);
+        background-image: url(https://img.freepik.com/premium-photo/gradient-purple-blue-color-abstract-background_27109-275.jpg);
         font-size: small;
     }
 
