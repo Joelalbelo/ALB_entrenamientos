@@ -74,6 +74,7 @@ footer {
     margin: 0 10px;
 }
 footer a {
+    color: black;
     text-decoration: none;
   }
 
@@ -128,7 +129,7 @@ background-color: goldenrod;
         
     }
     
-    body {
+    body {  /* para pantallas pequeñas el fondo tiene estilo en degradé*/
         background-image: url(https://img.freepik.com/premium-photo/gradient-purple-blue-color-abstract-background_27109-275.jpg);
         font-size: small;
     }
